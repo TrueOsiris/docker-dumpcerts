@@ -7,7 +7,7 @@ RUN \
 
 COPY dumpcerts.sh /usr/local/bin/dumpcerts
 RUN chmod +x /usr/local/bin/dumpcerts \
- && /usr/bin/ln -s /usr/local/bin/dumpcerts /dumpcerts
+ && ln -s /usr/local/bin/dumpcerts /dumpcerts
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
